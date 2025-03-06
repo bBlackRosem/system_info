@@ -552,7 +552,7 @@ function get_log_files(){
 	echo "$(ColorBlue 'IIIIIIIIIIIIIIIIIIIIIII ') $(ColorGreen 'Get All LOG Files') $(ColorBlue ' IIIIIIIIIIIIIIIIIIIIIII')"
 	echo -e "$(find / -type f -name 'access.log' 2>/dev/null | grep . || echo $(ColorRed 'Not Found access.log'))"
 	echo ""
-	echo -e "$(find / -type f -name 'error.log' 2>/dev/null | grep . || echo 'Not Found error.log'))"
+	echo -e "$(find / -type f -name 'error.log' 2>/dev/null | grep . || echo $(ColorRed 'Not Found error.log'))"
 	echo ""
 	echo ""
 }
